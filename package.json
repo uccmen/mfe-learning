@@ -1,0 +1,24 @@
+{
+  "name": "mfe-learning",
+  "version": "1.0.0",
+  "author": "Ucchishta Sivaguru <ucc.men@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "host",
+    "mfe-svelte",
+    "mfe-react"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach --all -p run build",
+    "dev": "yarn workspaces foreach --all -p run dev",
+    "serve": "yarn workspaces foreach --all -p run serve",
+    "stop": "yarn workspaces foreach --all -p run stop",
+    "clean": "yarn workspaces foreach --all -p run clean"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.4.1",
+    "kill-port": "^2.0.1"
+  },
+  "packageManager": "yarn@4.9.4"
+}
