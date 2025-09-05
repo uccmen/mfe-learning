@@ -2322,8 +2322,11 @@ const RAW_RUNTIME_STATE =
       ["workspace:host", {\
         "packageLocation": "./host/",\
         "packageDependencies": [\
+          ["@originjs/vite-plugin-federation", "npm:1.4.1"],\
           ["@vitejs/plugin-vue", "virtual:3180308dd9b4733a3bc997e206b969071097ff8354aed12ed08eb4ea81c3b3ea5143e8506ad4d33a8c3367d6549f6c09284a945decd16ce86d5441d93fd00996#npm:6.0.1"],\
           ["host", "workspace:host"],\
+          ["react", "npm:19.1.1"],\
+          ["react-dom", "virtual:3180308dd9b4733a3bc997e206b969071097ff8354aed12ed08eb4ea81c3b3ea5143e8506ad4d33a8c3367d6549f6c09284a945decd16ce86d5441d93fd00996#npm:19.1.1"],\
           ["vite", "virtual:3180308dd9b4733a3bc997e206b969071097ff8354aed12ed08eb4ea81c3b3ea5143e8506ad4d33a8c3367d6549f6c09284a945decd16ce86d5441d93fd00996#npm:7.1.4"],\
           ["vue", "virtual:3180308dd9b4733a3bc997e206b969071097ff8354aed12ed08eb4ea81c3b3ea5143e8506ad4d33a8c3367d6549f6c09284a945decd16ce86d5441d93fd00996#npm:3.5.21"]\
         ],\
@@ -2669,6 +2672,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./mfe-react/",\
         "packageDependencies": [\
           ["@eslint/js", "npm:9.34.0"],\
+          ["@originjs/vite-plugin-federation", "npm:1.4.1"],\
           ["@types/react", "npm:19.1.12"],\
           ["@types/react-dom", "virtual:979e77c5fe57569d816ad6de3219018fbfbd8bf7f6176e6a910d9d1209355c44be01ed30b619187e7004a097b345cc9424f3a3232177e4bbe56ccd1ec9527320#npm:19.1.9"],\
           ["@vitejs/plugin-react", "virtual:979e77c5fe57569d816ad6de3219018fbfbd8bf7f6176e6a910d9d1209355c44be01ed30b619187e7004a097b345cc9424f3a3232177e4bbe56ccd1ec9527320#npm:5.0.2"],\
@@ -2689,6 +2693,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:mfe-svelte", {\
         "packageLocation": "./mfe-svelte/",\
         "packageDependencies": [\
+          ["@originjs/vite-plugin-federation", "npm:1.4.1"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:ddd00b16f7306f886473a7322362636c2d0a6f26d8834a144b8b29a382a9d4fbd9da540d24cac9fc0ebaef9cdf9f37c6618dba271ad6765b723f5b182c9c4662#npm:6.1.4"],\
           ["mfe-svelte", "workspace:mfe-svelte"],\
           ["svelte", "npm:5.38.6"],\
@@ -3061,6 +3066,20 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "npm:19.1.1"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:3180308dd9b4733a3bc997e206b969071097ff8354aed12ed08eb4ea81c3b3ea5143e8506ad4d33a8c3367d6549f6c09284a945decd16ce86d5441d93fd00996#npm:19.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-e91b943a41/5/.yarn/berry/cache/react-dom-npm-19.1.1-552337dd3b-10c0.zip/node_modules/react-dom/",\
+        "packageDependencies": [\
+          ["@types/react", null],\
+          ["react", "npm:19.1.1"],\
+          ["react-dom", "virtual:3180308dd9b4733a3bc997e206b969071097ff8354aed12ed08eb4ea81c3b3ea5143e8506ad4d33a8c3367d6549f6c09284a945decd16ce86d5441d93fd00996#npm:19.1.1"],\
+          ["scheduler", "npm:0.26.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:979e77c5fe57569d816ad6de3219018fbfbd8bf7f6176e6a910d9d1209355c44be01ed30b619187e7004a097b345cc9424f3a3232177e4bbe56ccd1ec9527320#npm:19.1.1", {\
         "packageLocation": "./.yarn/__virtual__/react-dom-virtual-05a5e4a64e/5/.yarn/berry/cache/react-dom-npm-19.1.1-552337dd3b-10c0.zip/node_modules/react-dom/",\
